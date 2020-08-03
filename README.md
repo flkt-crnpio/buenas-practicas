@@ -1,67 +1,21 @@
-# Buenas prácticas
+# Guía de buenas prácticas en desarrollo web
 
-## Evita mezclar tecnologías
+Este repositorio es una pequeña guía con una serie de recomendaciones, buenas prácticas, enlaces y recursos para mejorar el desarrollo Web. Primero se abordan las recomendaciones generales se deben seguir para mejorar la lectura y mantenimiento de cualquier aplicación. Para después adentrarse ligeramente en cada tecnoloía individualmente.
+
+___
+
+## Generales
+
+### 1. Evita mezclar tecnologías
 Por ejemplo escribir estilos en javascritp hace que se crea que las clases de CSS no estan funcionando y hace que sea más complicado de mantener el código.
 
-## Sangría consistente
+### 2. Utiliza una sangría consistente
 Tanto en HTML, CSS ó JavaSctipt, se necesita estandarizar un estilo de espaciado y utilizarlo en todo el proyecto. Hay muchos estilos y ninguno es 'el bueno' pero utilizar el mismo en todos lados ayuda a mejorar la lectura. 
 
 Se pueden utilizar espacios 2 o 4 espacios; o un tabulador, pero siempre se debe identar. Y el espacio entre cada elemento o si las llaves van pegadas o separadas de una declaracion, si los parametros se separan con espacio
 
-### En HTML
-Siempre identar, siempre siempre
-```
-<p>
-    Contenido acá
-    <ul>
-        <li>siempre identar</li>
-        <li>siempre</li>
-    </ul>
-</p>
-```
 
-### En CSS
-```
-.clase {
-    propiedad: .4; // float
-    propiedad: 1; // int
-    &::after { // pseudo element
-        propiedad: "valor"; //string
-    }
-    &:hover { // pseudo class
-        propiedad: #aaa; // hexadecimal
-    }
-}
-
-@media (max-width: 600px) {
-    // poner acá todas las clases que se modifican
-    // pero solo las propiedades que se modifican
-    .classe {
-        propuedad: .3;
-    }
-}
-```
-
-### En JavaScript
-Utilizar espacios entre los parametros o variables.
-```
-// no sean asi, no cobran por espacio
-let variable='algo'
-function nombrefuncioin(p1,p2,p3,p4,p5,p6){
-//y aca otra cosa
-}
-
-
-
-// Esto se lee más fácil
-
-let variable = 'algo';
-function nombreFuncion( parametro1, parametro2 ) {
-    // codigo aqui
-}
-```
-
-## Agrupación de código
+### 3. Agrupa el código en segmentos
 Esta es la sugerencia más opcional de la vida del código, pero igual siempre me ha parecido que hace más fácil de leer como por párrafos en una novela.
 
 ```
@@ -79,24 +33,7 @@ function editarAlgo(unaVariable) {
 // y entonces empieza con un margen de espacio
 ```
 
-## Nomenclatura consistente
-Existen varios estilos de escribir nombres de variables, funciones, clases. No existe 'el mejor método para combinar estilos' pero siempre a lo largo de la aplicación se debe mantener el mismo estilo para las mismas cosas.
-
-* camelCase
-* PascalCase
-* snake_case
-* SNAKE_CASE_CAPS
-* kebab-case
-
-
-## Simplifica y reutiliza
-
-Escribir fragmentos de código reutilizables.
-
-Hacer una sola tarea por funcion para mantenerlo lo más modular posible, mejora la lectura, reutilizacion, factorizacion y pruebas.
-
-
-## Comenta el codigo
+### 4. Comenta el codigo
 Cuando se comente dentro del código utilizar comentatios en linea 
 y si se hace documentacion de una clase o funcion, 
 documentar antes del inicio de la clase con comentario de bloque
@@ -110,6 +47,41 @@ documentar antes del inicio de la clase con comentario de bloque
      // aca un comentario en linea
  }
 ```
+
+### 5. Simplifica y reutiliza
+
+Escribir fragmentos de código reutilizables.
+
+Hacer una sola tarea por funcion para mantenerlo lo más modular posible, mejora la lectura, reutilizacion, factorizacion y pruebas.
+
+
+___
+
+## HTML
+
+### Estructura HTML5
+### Semántica
+### Reducción de etiquetas
+
+___
+
+## CSS
+
+___
+
+## JavaScript
+
+
+
+## Nomenclatura consistente
+Existen varios estilos de escribir nombres de variables, funciones, clases. No existe 'el mejor método para combinar estilos' pero siempre a lo largo de la aplicación se debe mantener el mismo estilo para las mismas cosas.
+
+* camelCase
+* PascalCase
+* snake_case
+* SNAKE_CASE_CAPS
+* kebab-case
+
 
 ## Declaración de variables 
 
@@ -190,6 +162,7 @@ let isAdmin = true;
 let hasDescription = false;
 ```
 
+
 ## Comparaciones en JavaScript
 Utilizar `===` en JavaScript en lugar de `==`. El primero hace una comparación contra el tipo de variable y el valor de la variable, mientras que el segundo solo verifica el valo y pueden existir comparaciones que no se esperan. 
 
@@ -203,6 +176,7 @@ alert(0 == false); // true
 
 alert(0 === false); // false, porque son de diferentes tipos
 ```
+
 
 ## Utilizar defaults para los parametros en las funciones
 ```
