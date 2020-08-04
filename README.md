@@ -5,6 +5,7 @@ Este repositorio es una pequeña guía con una serie de recomendaciones, buenas 
 
 ## Por tecnología
 * [En general](generales.md)
+    * Evita los caracteres especiales del español
     * Evita mezclar tecnologías
     * Utiliza una sangría consistente
     * Agrupa el código en segmentos
