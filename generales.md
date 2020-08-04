@@ -1,17 +1,4 @@
-# Guía de buenas prácticas en desarrollo web
-
-Este repositorio es una pequeña guía con una serie de recomendaciones, buenas prácticas, enlaces y recursos para mejorar el desarrollo Web. Primero se abordan las recomendaciones generales se deben seguir para mejorar la lectura y mantenimiento de cualquier aplicación. Para después adentrarse ligeramente en cada tecnoloía individualmente.
-
-
-
-## Por tecnología
-[HTML](./html.md)
-[CSS](./css.md)
-[JavaScript](./javascript.md)
-
-
-
-## En general
+# Buenas prácticas para código en general
 
 ### Evita mezclar tecnologías
 Por ejemplo escribir estilos en javascritp hace que se crea que las clases de CSS no estan funcionando y hace que sea más complicado de mantener el código.
