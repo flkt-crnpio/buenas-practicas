@@ -98,3 +98,16 @@ Casi por convencion se utlizan minúsculas y se separa con guiones medios. Se de
 .important { ... }
 .tweet-header { ... }
 ```
+
+### Evita los @imports
+Cuando el navegador esta leyendo un archivo CSS y se encuentra con un @import deja de leer el archivo CSS original y empieza a descargar y leer el archivo importado y recién cuando termina sigue con el original.
+
+Debido a que la carga de CSS es una operación bloqueante el estar haciendo esto ralentiza el renderizado de nuestra aplicación por lo que es mejor evitar el uso de `@import` en los archivos CSS, en lugar de eso es mejor combinar los archivos o al menos usar dos etiquetas `<link>`.
+
+
+### Elimina el CSS innecesario
+Al usar algun framework de CSS es muy común no usar todos los estilos que este trae. Es mejor cargar solo los módulos que se están utilizando. También es bastante común que durante el desarrollo queden clases que ya no se utilizan y se dejan “por las dudas” y que el usuario esta descargando al bajar el CSS aunque no los necesite.
+
+
+### Minifica el CSS
+Esto a pesar de ser una gran mejora de rendimiento y velocidad es algo que todavía no se realiza en muchos sitios o aplicaciones web. El minificar el CSS, al igual que con el HTML, reduce el peso del archivo y elimina los comentarios, permitiendo una carga más rápido del archivo y terminar el renderizado antes.
