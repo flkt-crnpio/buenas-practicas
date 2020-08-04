@@ -5,7 +5,7 @@ Este repositorio es una pequeña guía con una serie de recomendaciones, buenas 
 
 
 ## Por tecnología
-* [En general](generales.html)
+* [En general](generales.md)
     * Evita mezclar tecnologías
     * Utiliza una sangría consistente
     * Agrupa el código en segmentos
