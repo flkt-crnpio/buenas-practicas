@@ -1,5 +1,8 @@
 # Buenas prácticas para código en general
 
+### Evita los caracteres especiales del español
+El lenguaje estándar de programación no contiene dichos caracteres, solo los que son parte de la arquitectura básica [Código ASCII — American Standard Code for Information Interchange](https://ascii.cl/es/). Utilizar cualquier tipo de tilde, como ñ ü ú û, puede ocacionar errores.
+
 ### Evita mezclar tecnologías
 Por ejemplo escribir estilos en javascritp hace que se crea que las clases de CSS no estan funcionando y hace que sea más complicado de mantener el código.
 
