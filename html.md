@@ -1,6 +1,6 @@
 # HTML
 
-### Estructura HTML5
+### Estructura en HTML5
 Estandar mode doctype
 ```
 <!doctype html>
@@ -46,7 +46,7 @@ Siempre que se pueda, de preferencia incluir los archivos de JavaScript al final
 ```
 
 
-### Web Semántica
+### Utiliza la web semántica
 Con las etiquetas semánticas mejoramos la definición de nuestro contenido, es más entendible tanto para humanos como para máquinas(algoritmos de buscadores)
 
 No todo se trata de las nuevas etiquetas incorporadas en HTML5
@@ -71,7 +71,7 @@ No todo se trata de las nuevas etiquetas incorporadas en HTML5
 También se trata de saberlas utilizar. Si es una lista utiliza `ol` o `ul`, que para eso fueron creadas en lugar de hacer una hilera de `div`s . Al hacer una página nueva intenta utilizar las etiquetas de HTML a tu favor para dar dormato, antes de empezar a agregar estilos en CSS.
 
 
-### Reducción de etiquetas
+### Reduce el uso de etiquetas
 ```
 <!-- Utilizar etiquetas para encerrar estilos no tiene sentido -->
 <span class="avatar">
@@ -83,7 +83,7 @@ También se trata de saberlas utilizar. Si es una lista utiliza `ol` o `ul`, que
 ```
 
 
-### Imágenes responsivas
+### Utiliza picture para imagenes responsivas
 Utilizar `<picture>` con multiples imágenes para mejorarla carga o visualización de imágenes
 ```
 <picture>
@@ -94,7 +94,7 @@ Utilizar `<picture>` con multiples imágenes para mejorarla carga o visualizaci�
 ```
 
 
-### Espeficicación del tamaño en imágenes
+### Especifíca el tamaño en las imagenes
 De ser posible define el atributo `width` y `height` de una imagen. Esto ayudará a evitar repaints y reflows durante el renderizado. Pero manteniendo en mente que el tamaño real de la imágen es el que pesa en el render.
 
 

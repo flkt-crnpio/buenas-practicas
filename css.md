@@ -2,7 +2,7 @@
 Para desarrollo, utiliza un preprocesador como SASS o LESS. 
 Para producción, compila los CSS dentro de un archivo y minificalo para reducir su peso y tamaño.
 
-### Estructura 
+### Estructura de códifo y archivos 
 Organiza las secciones de código por elementos y los archivos por copmonentes.
 Se puede mantener un archivo de variables para poder utlizarla a lo largo de los componentes.
 
