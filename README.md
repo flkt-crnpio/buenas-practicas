@@ -2,9 +2,7 @@
 
 Este repositorio es una pequeña guía con una serie de recomendaciones, buenas prácticas, enlaces y recursos para mejorar el desarrollo Web. Primero se abordan las recomendaciones generales se deben seguir para mejorar la lectura y mantenimiento de cualquier aplicación. Para después adentrarse ligeramente en cada tecnoloía individualmente.
 
-
-
-## Por tecnología
+## Contenido
 * [En general](generales.html)
     * Evita mezclar tecnologías
     * Utiliza una sangría consistente
