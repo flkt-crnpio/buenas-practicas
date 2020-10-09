@@ -1,6 +1,6 @@
-# Guía de buenas prácticas en desarrollo web
+# DAI Guía de buenas prácticas 
 
-Este repositorio es una pequeña guía con una serie de recomendaciones, buenas prácticas, enlaces y recursos para mejorar el desarrollo Web. Primero se abordan las recomendaciones generales que se deben seguir para mejorar la lectura y mantenimiento de cualquier aplicación. Para después adentrarse ligeramente en cada tecnología individualmente.
+Este repositorio es una guía con una serie de recomendaciones, buenas prácticas, y enlaces a recursos para mejorar el desarrollo.
 
 ## En general
 * [Código](generales.md)
