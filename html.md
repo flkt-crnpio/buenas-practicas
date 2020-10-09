@@ -66,8 +66,8 @@ Para todas las páginas web se deben utilizar primero las etiquetas de HTML para
 ```
 
 
-### Utiliza picture para imagenes responsivas
-Utilizar `<picture>` con multiples imágenes para mejorarla carga o visualización de imágenes
+### Utiliza picture para imágenes responsivas
+Utilizar `<picture>` con múltiples imágenes para mejorarla carga o visualización de imágenes
 ```
 <picture>
     <source media="(min-width: 721px)" srcset="./img/proyectos-480w.jpg" />
@@ -77,12 +77,12 @@ Utilizar `<picture>` con multiples imágenes para mejorarla carga o visualizaci�
 ```
 
 
-### Especifíca el tamaño en las imagenes
+### Especifica el tamaño en las imágenes
 De ser posible define el atributo `width` y `height` de una imagen. Esto ayudará a evitar repaints y reflows durante el renderizado. Pero manteniendo en mente que el tamaño real de la imágen es el que pesa en el render.
 
 
 ### Elementos con acciones
-Se utiliza un link cuando necesitemos enviar al usuario a un lugar en especifico, independientemente de cómo se deba ver en diseño
+Se utiliza un link cuando necesitemos enviar al usuario a un lugar en específico, independientemente de cómo se deba ver en diseño.
 ```
 // NO 
 <button onclick="window.location.href='/alguna/pagina'">
@@ -101,7 +101,7 @@ Se utiliza un link cuando necesitemos enviar al usuario a un lugar en especifico
 </a>
 ```
 
-De igual manera, si se requiere que algun elemento haga una acción NO se utiliz un link, porque después se tiene que bloquear su acción primaria con JavaScript
+De igual manera, si se requiere que algún elemento haga una acción NO se utiliza un link, porque después se tiene que bloquear su acción primaria con JavaScript
 ```
 // NOOO
 // e.preventDefault(); 
