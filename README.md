@@ -9,6 +9,7 @@ Este repositorio es una pequeña guía con una serie de recomendaciones, buenas 
     * Utiliza una sangría consistente
     * Agrupa el código en segmentos
     * Comenta el código
+    * Nombres obvios y simplificados
     * Simplifica y reutiliza
     * Haz pruebas
  
