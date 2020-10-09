@@ -1,7 +1,7 @@
 # HTML
 
 ### Estructura en HTML5
-Estandar mode doctype
+Modo estándar para iniciar un documento en HTML5
 ```
 <!doctype html>
 ```
@@ -13,7 +13,7 @@ Agregar siempre el atributo de lenguaje
 </html>
 ```
 
-Character encoding
+Agregar el metadato de la codificación de caracteres
 ```
 <head>
     <meta charset="utf-8">
@@ -47,28 +47,11 @@ Siempre que se pueda, de preferencia incluir los archivos de JavaScript al final
 
 
 ### Utiliza la web semántica
-Con las etiquetas semánticas mejoramos la definición de nuestro contenido, es más entendible tanto para humanos como para máquinas(algoritmos de buscadores)
+Con las etiquetas semánticas mejoramos la definición de nuestro contenido, es más entendible tanto para humanos como para máquinas(algoritmos de buscadores) [html5 semantic elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
 
-No todo se trata de las nuevas etiquetas incorporadas en HTML5
-```
-<article>
-<aside>
-<details>
-<figcaption>
-<figure>
-<footer>
-<header>
-<main>
-<mark>
-<nav>
-<section>
-<summary>
-<time>
-```
-* [html5 semantic elements](https://www.w3schools.com/html/html5_semantic_elements.asp)
+Son muy importantes para la semántica las nuevas etiquetas incorporadas en HTML5, es necesario aprenderlas a utilizar. Por ejemplo, si se está agregando una lista utiliza `ol` o `ul`, que para eso fueron creadas en lugar de hacer una hilera de `div`s. 
 
-
-También se trata de saberlas utilizar. Si es una lista utiliza `ol` o `ul`, que para eso fueron creadas en lugar de hacer una hilera de `div`s . Al hacer una página nueva intenta utilizar las etiquetas de HTML a tu favor para dar dormato, antes de empezar a agregar estilos en CSS.
+Para todas las páginas web se deben utilizar primero las etiquetas de HTML para dar formato, antes de empezar a agregar estilos en CSS.
 
 
 ### Reduce el uso de etiquetas
