@@ -10,7 +10,7 @@ Existen varios estilos de escribir nombres de variables, funciones, clases. No e
 * kebab-case
 
 ### Declaración de variables 
-Aunque en JavaScript una variable puede ser declarada después de utlizarse es una buena práctica declarar las variables al inicio del código, excepto las que se utilizan solo en un bloque.
+Aunque en JavaScript una variable puede ser declarada después de utilizarse es una buena práctica declarar las variables al inicio del código, excepto las que se utilizan solo en un bloque.
 
 Elegir el tipo de variable dependiendo de los requerimientos 
 * `const` // scope de bloque
@@ -21,7 +21,7 @@ Elegir el tipo de variable dependiendo de los requerimientos
 {
   var x = 2;
 }
-// con VAR x PUEDE seguirse utilizando despues del bloque
+// con VAR x PUEDE seguirse utilizando después del bloque
 ```
 ```
 {
@@ -67,7 +67,7 @@ z = 4; // error
 Por legibilidad y porque el código nunca se debe escribir para uno mismo, es mejor ser descriptivo a la hora de poner el nombre a las variables
 
 ```
-// esto es difícil de desifrar, pues tienes que leer todo lo que está alrededor para enterarte para que se necesita
+// esto es difícil de descifrar, pues tienes que leer todo lo que está alrededor para enterarte para que se necesita
 
 let iu = []; 
 
@@ -76,7 +76,7 @@ let iu = [];
 
 let informacionUsuario = [];
 ```
-Y utlizar prefijos `has` `is` para variables boleanas
+Y utilizar prefijos `has` `is` para variables booleanas
 ```
 let isAdmin = true;
 
@@ -86,7 +86,7 @@ let hasDescription = false;
 ```
 
 ### Comparaciones en JavaScript
-Utilizar `===` en JavaScript en lugar de `==`. El primero hace una comparación contra el tipo de variable y el valor de la variable, mientras que el segundo solo verifica el valo y pueden existir comparaciones que no se esperan. 
+Utilizar `===` en JavaScript en lugar de `==`. El primero hace una comparación contra el tipo de variable y el valor de la variable, mientras que el segundo solo verifica el valor y pueden existir comparaciones que no se esperan. 
 
 Por ejemplo
 ```
@@ -99,7 +99,7 @@ alert(0 == false); // true
 alert(0 === false); // false, porque son de diferentes tipos
 ```
 
-### Utilizar defaults para los parametros en las funciones
+### Utilizar defaults para los parámetros en las funciones
 ```
 function logNumber(num = 25) {
     console.log(num);
@@ -108,4 +108,4 @@ logNumber();
 ```
 
 ### Elimina los console.logs en producción
-En general no esta bien que se vean los mensajes de prueba a la hora de abrir la consola, pero el problema también es que cuando se ejecutan llevan un proceso y se suman a la lista de tareas que debe hacer el navegador para mostrar el contenido.
+En general no está bien que se vean los mensajes de prueba a la hora de abrir la consola, pero el problema también es que cuando se ejecutan llevan un proceso y se suman a la lista de tareas que debe hacer el navegador para mostrar el contenido.
