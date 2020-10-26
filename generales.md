@@ -1,10 +1,23 @@
 # Buenas prácticas para código en general
 
+### Lee proyectos de código abierto
+Los proyectos de código abierto se construyen con el aporte de muchos desarrolladores. Estos proyectos necesitan mantener un alto nivel de legibilidad de código para que el equipo pueda trabajar de una manera conjunta tan eficientemente como sea posible. Por lo tanto, es una buena idea navegar a través del código fuente de estos proyectos para observar lo que estos desarrolladores están haciendo.
+
 ### Evita los caracteres especiales del español
-El lenguaje estándar de programación no contiene dichos caracteres, solo los que son parte de la arquitectura básica [Código ASCII — American Standard Code for Information Interchange](https://ascii.cl/es/). Utilizar cualquier tipo de tilde, como ñ ü ú û, puede ocasionar errores.
+El lenguaje estándar de programación no contiene los caracteres que utilizamos en español, solo los que son parte de la arquitectura básica [Código ASCII — American Standard Code for Information Interchange](https://ascii.cl/es/). Utilizar cualquier tipo de tilde, como ñ ü ú û, puede ocasionar errores.
 
 ### Evita mezclar tecnologías
 Por ejemplo, escribir estilos en JavaScript puede hacer que se crea que las clases de CSS no están funcionando y hace más complicado mantener el código. Lo mismo para cualquier tecnología, es preferible mantener la organización de los archivos únicamente con código del nombre de la extensión de su archivo, en la medida de lo posible.
+
+### Evita la anidación profunda
+Demasiados niveles de anidamiento pueden hacer que el código sea más difícil de leer y seguir. Y muy probablemente exite una manera mejor de obtener el mismo resultado.
+```
+if():
+    if():
+        if():
+            if():
+                if():
+```
 
 ### Utiliza una sangría consistente
 En cualquier lenguaje, se necesita estandarizar un estilo de espaciado y utilizarlo en todo el proyecto. Hay muchos estilos y ninguno es 'el bueno' pero utilizar el mismo en todos lados ayuda a mejorar la lectura. Lo más común es la sangría con dos espacios o un tabulador (cuatro espacios), esta característica se debe configurar en el IDE de cada desarrollador.
@@ -86,7 +99,15 @@ function nombreDeFuncion() {
 }
 ```
 
-### Nombres obvios y simplificados
+Pero evita los comentarios redundantes. La mejor documentacion es utilizas nombres de funciones y variables para describir lo que se está haciendo, en esos casos, es mejor no poner comentarios extra
+```
+// if country code is MX
+if (country_code == 'MX') {
+
+}
+```
+
+### Utiliza nombres obvios para funciones y variables
 No siempre es necesario agregar documentación, sobre todo si los nombres de variables y funciones describen el código que se está ejecutando. Una buena nomenclatura es la mejor documentación.
 
 Evitar escribir código como:
@@ -100,10 +121,12 @@ function r_c(r){
 }
 ```
 
-### Simplifica y reutiliza
+### Simplifica el código en fragmentos reutilizables
 
 Escribir fragmentos de código reutilizables. Hacer una sola tarea por función mejora la lectura, reutilización, factorización y pruebas.
 
 ### Haz pruebas
+
+Considerar las pruebas como parte de las especificaciones del proyecto. Diseñar previamente los escenarios de prueba, dentro del desarrollo de software, y realizar revisiones para asegurarse de que lo que se está construyendo cumple con los requerimientos solicitados.
 
 Cuando se hacen pruebas de FrontEnd es buena idea separar las pruebas de UI de las de funcionalidad. De ser posible las pruebas se deben parecer lo más posible a la realidad a la que se enfrentarán.
