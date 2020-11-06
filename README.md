@@ -40,6 +40,11 @@
     * Utilizar defaults para los parámetros en las funciones
     * Elimina los console.logs en producción
 
+## Bases de datos
+### Seguridad en los accesos a Bases de Datos desde un proyecto web
+### DB relacionales 
+### DB no relacionales
+
 ## APIs
 Application Programming Interface, es un conjunto de comandos, funciones, protocolos y objetos que los programadores pueden usar para interactuar con un sistema externo.
 
@@ -53,6 +58,20 @@ Application Programming Interface, es un conjunto de comandos, funciones, protoc
 * [No mezcles recursos](api.md#no-mezcles-recursos)
 * [Utiliza querystring para filtrar, ordenar y paginar](api.md#utiliza-querystring-para-filtrar-ordenar-y-paginar)
 
+## A11y
+https://github.com/Stephs15/accessibility-resources
+
+## Librerías utilizadas en la DAI
+### Visualizacion de datos
+* [amcharts](https://www.amcharts.com/) gráficas en JavaScript 
+* [OpenLayers](https://openlayers.org/) mapas en JavaScript
+
+### Estilos en páginas web
+* [bulma](bulma.io/) CSS y SASS
+
+### Frameworks para crear páginas web
+* [jekyll](https://jekyllrb.com/) páginas estáticas
+* [Vue](https://vuejs.org/) componentes con JavaScript
 
 ## Ligas útiles
 * [Para ver áreas de mejora en rendimiento](https://developers.google.com/speed/pagespeed/insights/?hl=es)
