@@ -41,9 +41,45 @@
     * Elimina los console.logs en producción
 
 ## Bases de datos
-### Seguridad en los accesos a Bases de Datos desde un proyecto web
-### DB relacionales 
-### DB no relacionales
+### Diseño de la base de datos
+    * Selecciona adecuadamente entre Relacional o No Relacional
+    * Normaliza los datos. Reduce la redundancia, elimina los atributos con valores multiples y los atributos repetidos que comiencen con subclaves
+    * Escribe estructuras transparentes. Los nombres utilizados en una base de datos no son para sus creadores, son para sus usuarios, elimina el uso de abreviaturas que no son comunes
+    * Estandariza los nombres de tablas, relaciones y atributos
+    * Documenta, escribe un diccionario de datos
+    * Una tabla debe representar un objecto único
+    * Utiliza stored procedures
+    * Definir restricciones para mantener la integridad de los datos. Utiliza las propiedades de las tablas para guardar las reglas que no cambian en el diseño de tu base de datos. Como el largo del contenido, las llaves foraneas, si un contenido puedo o no ser nulo, si es de un dato en particular...
+    * Optimiza para mejorar la velocidad. Crea índices para consultas que se utilizarán con regularidad. Utiliza un analizador de bases de datos para determinar si es necesario un índice o un índice agrupado. 
+    * Considera la posibilidad de incorporar herramientas como Elastisearch para acelerar las búsquedas.
+    * De ser posible, poner la base de datos en su propio servidor para reducir el uso de la CPU. Además de liberar recursos informáticos, también ayuda a mantener la base de datos fuera del alcance de usuarios no autorizados.
+
+### SQL convencion de nombres
+    * escribe en minusculas_separado_por_guiones_bajos
+    * no utilices data types como nombres como `text` o `timestamp``
+    * los nombres de los objetos deben ser nombres completos 'full english words'. La mayoría de las bases de datos soportan hasta 30 caracteres para los nombres. Es mejor usar `middle_name` en lugar de `mid_nm`
+    * si se escribe en español es necesario evitar todo tipo de tilde y caracter especial del idioma
+    * utiliza abreviaturas comunes como `i18n` en lugar de `internacionalización` o `l10n` en lugar de `localizacion` 
+    * no utilices palabras reservadas como `user` o `table`
+    * utiliza nombres en singular. tablas y vistas deben llamarse `team` no `teams`
+    * las llaves primarias deben ser únicas y llamarse `id` 
+    * las llaves foraneas deben comenzar con la referencia de la tabla y el nombre del campo al que referencian `foo_id`
+    * no utilizar prefijos ni sufijos en los nombres de tablas ni campos
+
+### Seguridad
+    * Proteje el acceso a la base de datos con un firewall para denegar el tráfico por default y solo dejar acceder desde páginas específicas o servidores conocidos ( no estoy segura si eso sea bueno para datos públicos )
+    * Cifra los datos, sobre todo los datos sensibles
+    * Reduce al mínimo los accesos directos a la base de datos
+    * Nunca otorgues todos los privilegios a todos los usuarios
+    * Accesos temporales con constraseñas fuertes
+    * Crear los accesos con privilegios específicos por usuario
+    * Bloquea los usuarios en caso de accesos fallidos por tres ocaciones consecutivas
+    * Se debe establecer un procedimiento para que las cuentas se desactiven cuando un usuario cambie de rol
+    * Monitorea la actividad de la base de datos
+    * Hacer copias de seguridad frecuentes
+    * Realiza auditorias
+    * Manten el software actualizado
+
 
 ## APIs
 Application Programming Interface, es un conjunto de comandos, funciones, protocolos y objetos que los programadores pueden usar para interactuar con un sistema externo.
