@@ -40,6 +40,19 @@
     * Utilizar defaults para los parámetros en las funciones
     * Elimina los console.logs en producción
 
+## APIs
+Application Programming Interface, es un conjunto de comandos, funciones, protocolos y objetos que los programadores pueden usar para interactuar con un sistema externo.
+
+### [Diseño de API](api.md)
+* [Escribe URLs que describan recursos y sus colecciones](api.md#escribe-urls-que-describan-recursos-y-sus-colecciones)
+* [Utiliza sustantivos autodescriptivos para los nombres de tus recursos y colecciones](api.md#utiliza-sustantivos-autodescriptivos-para-los-nombres-de-tus-recursos-y-colecciones)
+* [No utilices verbos en las llamadas](api.md#no-utilices-verbos-en-las-llamadas)
+* [Utiliza los métodos de HTTP para definir las acciones](api.md#utiliza-los-métodos-de-http-para-definir-las-acciones)
+* [Devuelve el correcto código de error y complementa con mensajes](api.md#devuelve-el-correcto-código-de-error-y-complementa-con-mensajes)
+* [Escribe ejemplos para todas las repuestas de las llamadas de la API](api.md#escribe-ejemplos-para-todas-las-repuestas-de-las-llamadas-de-la-api)
+* [No mezcles recursos](api.md#no-mezcles-recursos)
+* [Utiliza querystring para filtrar, ordenar y paginar](api.md#utiliza-querystring-para-filtrar,-ordenar-y-paginar)
+
 
 ## Ligas útiles
 * [Para ver áreas de mejora en rendimiento](https://developers.google.com/speed/pagespeed/insights/?hl=es)
