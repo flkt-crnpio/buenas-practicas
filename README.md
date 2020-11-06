@@ -110,6 +110,12 @@ Hacer la web accesible para todas las personas
     * Revisa la página en navegadores especializados
 
 
+    Guías
+    https://a11y-style-guide.com/style-guide/section-navigation.html
+    https://developer.chrome.com/apps/a11y
+    https://github.com/Stephs15/accessibility-resources
+
+
 
 ## Librerías utilizadas en la DAI
 ### Visualizacion de datos
