@@ -196,7 +196,7 @@ GET: /articles/?author_id=12
 
 ```
 
-# Utiliza querystring para filtrar, ordenar y paginar
+## Utiliza querystring para filtrar, ordenar y paginar
 Para manejar filtros, ordenar, paginar y buscar, lo mejor es utilizar `querystring`.
 
 Puede haber numerosas relaciones y propiedades, no es una buena práctica definir un recurso para cada una de ellas.  Por otro lado, un buen diseño de API debe proporcionar toda la información, los datos y los recursos necesarios para ayudar a las personas a utilizarlos. Además debe tenerse en cuenta la cantidad de datos que expone el recurso. Si está tratando de exponer mucho, puede haber implicaciones negativas en el servidor, especialmente en lo que respecta a la carga y el rendimiento. 

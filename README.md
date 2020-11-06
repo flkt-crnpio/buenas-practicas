@@ -51,7 +51,7 @@ Application Programming Interface, es un conjunto de comandos, funciones, protoc
 * [Devuelve el correcto código de error y complementa con mensajes](api.md#devuelve-el-correcto-código-de-error-y-complementa-con-mensajes)
 * [Escribe ejemplos para todas las repuestas de las llamadas de la API](api.md#escribe-ejemplos-para-todas-las-repuestas-de-las-llamadas-de-la-api)
 * [No mezcles recursos](api.md#no-mezcles-recursos)
-* [Utiliza querystring para filtrar, ordenar y paginar](api.md#utiliza-querystring-para-filtrar,-ordenar-y-paginar)
+* [Utiliza querystring para filtrar, ordenar y paginar](api.md#utiliza-querystring-para-filtrar-ordenar-y-paginar)
 
 
 ## Ligas útiles
