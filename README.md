@@ -58,8 +58,58 @@ Application Programming Interface, es un conjunto de comandos, funciones, protoc
 * [No mezcles recursos](api.md#no-mezcles-recursos)
 * [Utiliza querystring para filtrar, ordenar y paginar](api.md#utiliza-querystring-para-filtrar-ordenar-y-paginar)
 
-## A11y
-https://github.com/Stephs15/accessibility-resources
+## [A11y]
+Hacer la web accesible para todas las personas
+
+
+    Diseño
+    * Asegurate que el color no sea la única manera de comunicar algo
+    * Utiliza un diseño simple y consistente
+    * Revisa el contraste para el texto
+    * Revisa el contraste para los iconos
+    * Utilizar altos contrastes entre el color de fondo y el texto
+    * Utilizar texturas como complemento cuando los colores referencían algo
+    * Utiliza un label para cada input en un formulario
+    * Los errores y mensajes en los formularios no deben ser solo diferencias de color
+    * Los videos deben contener subtitulos
+    * El audio debe tener transcripciones
+    * Asegurate que exite (sobre todo para celulares) el espacio suficiente entre elementos interactivos
+
+
+    Programacion
+    * Agrega el atributo de lenguaje en la cabecera
+    * Escribir HTML semántico y [landmarks](https://www.w3.org/TR/wai-aria-practices/examples/landmarks/HTML5.html)
+    * Siempre debe existir uno y solo un H1
+    * No brincar los headings entre niveles
+    * No desabilites el zoom
+    * Asegurate que el zoom no cambia el interlineado del texto
+    * Siempre que se pueda interactuar con un elemento, utilizar link, botón o input
+    * Asegurate que las descripciones para links, botones y labels sea única y descriptiva
+    * No eliminar del CSS la propiedad outline de los elementos en la pseudoclase :focus
+    * Intenta no utilizar el autofocus
+    * Verifica que el focus de los elementos esté en el orden en el que estan distribuidos en la vista
+    * Escribe el atributo alt para todas las imágenes que no son decorativas
+    * Escribe un texto alternativo para describir imágenes complejas como mapas y gráficas
+    * Tablas con th scope y caption
+    * Utiliza fieldset y legend en los formularios 
+    * Cada input debe tener un label
+    * Asegurate que audio y video no tienen autoplay y todos sus controles funcionen correctamente
+
+
+    En celulares
+    * Revisa que se pueda rotar el contenido
+    * Elimina el scroll horizontal
+    * Asegurate que links y botones se pueden utilizar fácilmente
+    * Asegurate que existe espacio suficiente entre elementos interactivos
+
+
+    Pruebas
+    * Navega únicamente con el teclado
+    * Escucha tu página
+    * Incrementa el texto al 200%
+    * Revisa la página en navegadores especializados
+
+
 
 ## Librerías utilizadas en la DAI
 ### Visualizacion de datos
