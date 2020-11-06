@@ -80,6 +80,14 @@
     * Realiza auditorias
     * Manten el software actualizado
 
+### Conexiones seguras
+    * Utiliza HTTPS
+    * Las contraseñas deben tener un hash para proteger el sistema
+    * Nunca expongas información sensible en la URL
+    * Considera utilizar [OAuth](https://oauth.net/2/)
+    * Agrega timestamps en las solicitudes
+    * Valida los parámetros de entrada
+
 
 ## APIs
 Application Programming Interface, es un conjunto de comandos, funciones, protocolos y objetos que los programadores pueden usar para interactuar con un sistema externo.
