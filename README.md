@@ -51,20 +51,21 @@
     * Utiliza stored procedures
     * Definir restricciones para mantener la integridad de los datos. Utiliza las propiedades de las tablas para guardar las reglas que no cambian en el diseño de tu base de datos. Como el largo del contenido, las llaves foraneas, si un contenido puedo o no ser nulo, si es de un dato en particular...
     * Optimiza para mejorar la velocidad. Crea índices para consultas que se utilizarán con regularidad. Utiliza un analizador de bases de datos para determinar si es necesario un índice o un índice agrupado. 
-    * Considera la posibilidad de incorporar herramientas como Elastisearch para acelerar las búsquedas.
     * De ser posible, poner la base de datos en su propio servidor para reducir el uso de la CPU. Además de liberar recursos informáticos, también ayuda a mantener la base de datos fuera del alcance de usuarios no autorizados.
+    * En alta concurrencia considera la posibilidad de incorporar herramientas como Elastisearch para acelerar las búsquedas disminuyendo la carga de trabajo a la DB.  
+    
 
 ### SQL convencion de nombres
-    * escribe en minusculas_separado_por_guiones_bajos
-    * no utilices data types como nombres como `text` o `timestamp``
-    * los nombres de los objetos deben ser nombres completos 'full english words'. La mayoría de las bases de datos soportan hasta 30 caracteres para los nombres. Es mejor usar `middle_name` en lugar de `mid_nm`
-    * si se escribe en español es necesario evitar todo tipo de tilde y caracter especial del idioma
-    * utiliza abreviaturas comunes como `i18n` en lugar de `internacionalización` o `l10n` en lugar de `localizacion` 
-    * no utilices palabras reservadas como `user` o `table`
-    * utiliza nombres en singular. tablas y vistas deben llamarse `team` no `teams`
-    * las llaves primarias deben ser únicas y llamarse `id` 
-    * las llaves foraneas deben comenzar con la referencia de la tabla y el nombre del campo al que referencian `foo_id`
-    * no utilizar prefijos ni sufijos en los nombres de tablas ni campos
+    * Sscribe en minusculas_separado_por_guiones_bajos
+    * No utilices data types como nombres como `text` o `timestamp``
+    * Los nombres de los objetos deben ser nombres completos 'full english words'. La mayoría de las bases de datos soportan hasta 30 caracteres para los nombres. Es mejor usar `middle_name` en lugar de `mid_nm`
+    * Si se escribe en español es necesario evitar todo tipo de tilde y caracter especial del idioma
+    * Utiliza abreviaturas comunes como `i18n` en lugar de `internacionalización` o `l10n` en lugar de `localizacion` 
+    * No utilices palabras reservadas como `user` o `table`
+    * Utiliza nombres en singular. tablas y vistas deben llamarse `team` no `teams`
+    * Las llaves primarias deben ser únicas y llamarse `id` 
+    * Las llaves foraneas deben comenzar con la referencia de la tabla y el nombre del campo al que referencian `foo_id`
+    * No utilizar prefijos ni sufijos en los nombres de tablas ni campos
 
 ### Seguridad
     * Proteje el acceso a la base de datos con un firewall para denegar el tráfico por default y solo dejar acceder desde páginas específicas o servidores conocidos ( no estoy segura si eso sea bueno para datos públicos )
