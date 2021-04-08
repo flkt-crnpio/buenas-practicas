@@ -13,8 +13,17 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 ## Estilo de código
 - Limitar las líneas de código a máximo **79 caracteres**
 - **Espacios en Blanco**
-    - Se usarán después de una coma, para separar los elementos de un arreglo, lista, serie,  etc. Ejemplo:
+    - Utiliza espacio para separar los elementos de un arreglo, lista, serie,  etc. Ejemplo:
         ```b = [1, 3, 4, 7]```
-    - Inmediatamente después de un símbodo de asignación. Ejemplo:
+    - Utiliza espacio inmediatamente después de un símbodo de asignación. Ejemplo:
         ```x = 1```
-    - 
+    - **No** usar espacios alrededor del signo *=* en argumentos o parámetros de funciones.
+
+## Estilo de comentarios
+- Limitar las líneas de código a máximo **79 caracteres**
+- **Espacios en Blanco**
+    - Utiliza espacio para separar los elementos de un arreglo, lista, serie,  etc. Ejemplo:
+        ```b = [1, 3, 4, 7]```
+    - Utiliza espacio inmediatamente después de un símbodo de asignación. Ejemplo:
+        ```x = 1```
+    - **No** usar espacios alrededor del signo *=* en argumentos o parámetros de funciones.
