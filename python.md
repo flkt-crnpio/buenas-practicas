@@ -14,7 +14,7 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - Limitar las líneas de código a máximo **79 caracteres**
 - **Espacios en Blanco**
     - Se usarán después de una coma, para separar los elementos de un arreglo, lista, serie,  etc. Ejemplo:
-        `b = [1, 3, 4, 7]`
+        ```b = [1, 3, 4, 7]```
     - Inmediatamente después de un símbodo de asignación. Ejemplo:
-        `x = 1`
+        ```x = 1```
     - 
