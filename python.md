@@ -68,11 +68,73 @@ file_2.write(file_1.read())`
     - **Evite usar espacios en blanco en las siguientes situaciones**
         - Inmediatamente dentro de paréntesis, corchetes o llaves:
 
-        `# Correcto:
-        spam(ham[1], {eggs: 2})`
+        **Correcto**
+        
+        `spam(ham[1], {eggs: 2})`
 
-        `# Incorrecto:
-        spam( ham[ 1 ], { eggs: 2 }`
+        **Incorrecto**
+
+        `spam( ham[ 1 ], { eggs: 2 }`
+
+        - Entre una coma al final y un paréntesis de cierre:
+
+        **Correcto**
+        
+        `foo = (0,)`
+        
+        **Incorrecto**
+        
+        `bar = (0, )`
+
+        - Inmediatamente antes de una coma, punto y coma y dos puntos:
+        
+        **Correcto**
+
+        `if x == 4: print x, y; x, y = y, x`
+        
+        **Incorrecto**
+        
+        `if x == 4 : print x , y ; x , y = y , x`
+
+        - Inmediatamente antes del paréntesis abierto que indica la lista de argumentos en la llamada a una función:
+
+        **Correcto**
+
+        `spam(1)`
+
+        **Incorrecto**
+
+        `spam (1)`
+
+        - Inmediatamente antes del paréntesis abierto que inicia una indexación o división:
+
+        **Correcto**
+
+        `dct['key'] = lst[index]`
+
+        **Incorrecto**
+
+        `dct ['key'] = lst [index]`
+
+        - Más de un espacio alrededor de un operador de asignación para alinearlo con otro:
+
+        **Correcto**
+
+        `x = 1`
+
+        `y = 2`
+
+        `long_variable = 3`
+
+        **Incorrecto**
+
+        `x    = 1`
+
+        `y    = 2`
+
+        `long_variable     = 3`
+
+
 
  
 
