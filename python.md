@@ -5,12 +5,14 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - La importación de todas las bibliotecas siempre debe ir al inicio del código y después de cualquier comentario
 - Las importaciones deben estar en líneas separadas:
         
-    **_Correcto_**
-    
+    **Correcto**
+
     `import os`
     `import sys`
     `from subprocess import Popen, PIPE`
-    **_Incorrecto_**
+
+    **Incorrecto**
+
     `import os, sys`
 
 - Las importaciones deben agruparse en el siguiente orden:
@@ -19,16 +21,23 @@ En esta sección se resumen los que se consideran los puntos más importantes en
     - Importaciones de aplicaciones locales/bibliotecas específicas
 * _Nota: Entre cada grupo de importaciones debe ir un espacio en blanco_
 - Se recomiendan las importaciones abosolutas:
+
     `import mypkg.sibling`
     `from mypkg import sibling`
     `from mypkg.sibling import example`
-- Las importaciones relativas explícitas se recomiendan cuando se trata de diseños de paquetes complejos.
+
+- Las importaciones relativas explícitas se recomiendan cuando se trata de diseños de paquetes complejos:
+
     `from . import sibling`
     `from .sibling import example`
+
 - En importaciones de clases de un módulo lo correcto es escribir:
+
     `from myclass import MyClass`
     `from foo.bar.yourclass import YourClass`
+
     En caso de tener conflictos por ortografía, escribir:
+    
     `import myclass9`
     `import foo.bar.yourclass`
 
