@@ -140,9 +140,9 @@ file_2.write(file_1.read())`
         
  # Contacto
  
- @NadiaNeriVera
+ nadia.neri.vera@gmail.com
  
- @joselinceron
+ joselin.ceronal@gmail.com
 
 
 
