@@ -45,7 +45,7 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 ## Estilo de código
 - Limitar las líneas de código a máximo **79 caracteres**
 - En bloques de texto (*"docstrings o comentarios"*) la longitud de la línea debe limitarse a 72 caracteres.
-- El método más recomendado para “corte” de líneas largas es utilizar la continuación implícita dentro de paréntesis, corchetes o llaves. Las líneas largas pueden dividirse en múltiples líneas entre ( ). Este método es preferible al uso de  barra invertida (`“\”`) para la continuación de la línea.
+- El método más recomendado para “corte” de líneas largas es utilizar la continuación implícita dentro de paréntesis, corchetes o llaves. Las líneas largas pueden dividirse en múltiples líneas entre ( ). Este método es preferible al uso de  barra invertida (`“\”`) para la continuación de la línea:
 
 `with open('/path/to/some/file/you/want/to/read') as file_1, \
 open('/path/to/some/file/being/written', 'w') as file_2:
@@ -59,14 +59,23 @@ file_2.write(file_1.read())`
     - Utiliza espacio inmediatamente después de un símbodo de asignación:
 
         ```x = 1```
-        
     - **No** usar espacios alrededor del signo *=* en argumentos o parámetros de funciones.
+    - Separar funciones de alto nivel y definiciones de clase con **dos** líneas en blanco.
+    - Las definiciones de métodos dentro de una clase deben separarse por una línea en blanco.
+    - Las líneas en blanco adicionales pueden utilizarse (escasamente) para separar grupos de funciones relacionadas. Las líneas blancas pueden ser omitidas entre un grupo de funciones relacionadas.
+    - Utilizar líneas en blanco en funciones (escasamente), para indicar secciones lógicas. 
+    - Python acepta el carácter control-L como espacio en blanco.
+    - **Evite usar espacios en blanco en las siguientes situaciones**
+        - Inmediatamente dentro de paréntesis, corchetes o llaves:
 
-## Estilo de comentarios
-- Limitar las líneas de código a máximo **79 caracteres**
-- **Espacios en Blanco**
-    - Utiliza espacio para separar los elementos de un arreglo, lista, serie,  etc. Ejemplo:
-        ```b = [1, 3, 4, 7]```
-    - Utiliza espacio inmediatamente después de un símbodo de asignación. Ejemplo:
-        ```x = 1```
-    - **No** usar espacios alrededor del signo *=* en argumentos o parámetros de funciones.
+        `# Correcto:
+        spam(ham[1], {eggs: 2})`
+
+        `# Incorrecto:
+        spam( ham[ 1 ], { eggs: 2 }`
+
+ 
+
+        
+
+
