@@ -25,22 +25,27 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - Se recomiendan las importaciones abosolutas:
 
     `import mypkg.sibling`
+    
     `from mypkg import sibling`
+    
     `from mypkg.sibling import example`
 
 - Las importaciones relativas explícitas se recomiendan cuando se trata de diseños de paquetes complejos:
 
     `from . import sibling`
+    
     `from .sibling import example`
 
 - En importaciones de clases de un módulo lo correcto es escribir:
 
     `from myclass import MyClass`
+    
     `from foo.bar.yourclass import YourClass`
 
     En caso de tener conflictos por ortografía, escribir:
 
     `import myclass9`
+    
     `import foo.bar.yourclass`
 
 
