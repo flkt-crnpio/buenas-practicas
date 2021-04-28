@@ -9,6 +9,7 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 
     `import os`
     `import sys`
+    
     `from subprocess import Popen, PIPE`
 
     **Incorrecto**
