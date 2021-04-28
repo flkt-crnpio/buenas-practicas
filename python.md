@@ -5,13 +5,13 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - La importación de todas las bibliotecas siempre debe ir al inicio del código y después de cualquier comentario
 - Las importaciones deben estar en líneas separadas:
         
-        **_Correcto_**
-        `import os`
-        `import sys`
-        `from subprocess import Popen, PIPE`
-       
-        **_Incorrecto_**
-        `import os, sys`
+    **_Correcto_**
+    `import os`
+    `import sys`
+    `from subprocess import Popen, PIPE`
+    **_Incorrecto_**
+    `import os, sys`
+    
 - Las importaciones deben agruparse en el siguiente orden:
     - Importaciones de bibliotecas estándar
     - Importaciones de terceros relacionadas
