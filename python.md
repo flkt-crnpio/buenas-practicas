@@ -37,7 +37,7 @@ En esta sección se resumen los que se consideran los puntos más importantes en
     `from foo.bar.yourclass import YourClass`
 
     En caso de tener conflictos por ortografía, escribir:
-    
+
     `import myclass9`
     `import foo.bar.yourclass`
 
@@ -46,16 +46,20 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - Limitar las líneas de código a máximo **79 caracteres**
 - En bloques de texto (*"docstrings o comentarios"*) la longitud de la línea debe limitarse a 72 caracteres.
 - El método más recomendado para “corte” de líneas largas es utilizar la continuación implícita dentro de paréntesis, corchetes o llaves. Las líneas largas pueden dividirse en múltiples líneas entre ( ). Este método es preferible al uso de  barra invertida (`“\”`) para la continuación de la línea.
-    # Ejemplo
-    `with open('/path/to/some/file/you/want/to/read') as file_1, \
-     open('/path/to/some/file/being/written', 'w') as file_2:
-    file_2.write(file_1.read())`
+
+`with open('/path/to/some/file/you/want/to/read') as file_1, \
+open('/path/to/some/file/being/written', 'w') as file_2:
+file_2.write(file_1.read())`
 
 - **Espacios en Blanco**
-    - Utiliza espacio para separar los elementos de un arreglo, lista, serie,  etc. Ejemplo:
+    - Utiliza espacio para separar los elementos de un arreglo, lista, serie,  etc:
+
         ```b = [1, 3, 4, 7]```
-    - Utiliza espacio inmediatamente después de un símbodo de asignación. Ejemplo:
+
+    - Utiliza espacio inmediatamente después de un símbodo de asignación:
+
         ```x = 1```
+        
     - **No** usar espacios alrededor del signo *=* en argumentos o parámetros de funciones.
 
 ## Estilo de comentarios
