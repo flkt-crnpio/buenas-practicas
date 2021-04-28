@@ -63,9 +63,6 @@ file_2.write(file_1.read())`
 
         ```b = [1, 3, 4, 7]```
 
-    - Utiliza espacio inmediatamente después de un símbodo de asignación:
-
-        ```x = 1```
     - **No** usar espacios alrededor del signo *=* en argumentos o parámetros de funciones.
     - Separar funciones de alto nivel y definiciones de clase con **dos** líneas en blanco.
     - Las definiciones de métodos dentro de una clase deben separarse por una línea en blanco.
