@@ -132,11 +132,11 @@ file_2.write(file_1.read())`
 
         **Incorrecto**
 
-        `x    = 1`
+        `x    =             1`
 
-        `y    = 2`
+        `y    =             2`
 
-        `long_variable     = 3`
+        `long_variable     =              3`
         
  # Contacto
  
