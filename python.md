@@ -54,8 +54,14 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - En bloques de texto (*"docstrings o comentarios"*) la longitud de la línea debe limitarse a 72 caracteres.
 - El método más recomendado para “corte” de líneas largas es utilizar la continuación implícita dentro de paréntesis, corchetes o llaves. Las líneas largas pueden dividirse en múltiples líneas entre ( ). Este método es preferible al uso de  barra invertida (`“\”`) para la continuación de la línea:
 
+**incorrecto**
+
+`with open('/path/to/some/file/you/want/to/read') as file_1, open('/path/to/some/file/being/written', 'w') as file_2: file_2.write(file_1.read())`
+
+**correcto**
+
 `with open('/path/to/some/file/you/want/to/read') as file_1, \
-open('/path/to/some/file/being/written', 'w') as file_2:
+open('/path/to/some/file/being/written', 'w') as file_2: \
 file_2.write(file_1.read())`
 
 - **Espacios en Blanco**
@@ -132,11 +138,11 @@ file_2.write(file_1.read())`
 
         **Incorrecto**
 
-        `x    =             1`
+        `x    = __________ 1`
 
-        `y    =             2`
+        `y    = _______________ 2`
 
-        `long_variable     =              3`
+        `long_variable     = _________________ 3`
         
  # Contacto
  
