@@ -146,6 +146,12 @@ file_2.write(file_1.read())`
 
         `long_variable     = _________________ 3`
         
+        * Nota: "____" hace referencia a varios espacios en blanco
+
+ # Fuente
+ 
+ Esta información se obtuvo de
+        
  # Contacto
  
  nadia.neri.vera@gmail.com
