@@ -150,7 +150,7 @@ file_2.write(file_1.read())`
 
  # Fuente
  
- Esta información se obtuvo de
+ Esta información se obtuvo de https://www.python.org/dev/peps/pep-0008/
         
  # Contacto
  
