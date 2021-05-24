@@ -158,7 +158,10 @@ file_2.write(file_1.read())`
 - Al escribir los atributos, éstos deben ir en minúsculas, en caso de usar múltiples palabras conectarlos por medio de guines bajos (estilo serpiente/snake case style)  `first_name`
 
 ## Funciones
-- 
+- Usar minúsculas para nombrar las funciones, usar guines bajos para conectar palabras
+- Siempre usar `self` en el primer argumento
+- Describir lo que hace la función, este comentario debe aparecer después de la línea de definición `def`
+- Usar un nivel extra de identación (agregar 4 espacios) para hacer la distinción de los argumentos del resto del código
 
  # Fuente
  
