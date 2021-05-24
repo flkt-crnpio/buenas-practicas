@@ -148,6 +148,13 @@ file_2.write(file_1.read())`
         
         * Nota: "____" hace referencia a varios espacios en blanco
 
+## Clases
+
+- Al nombrar la clase se debe usar el estilo CamelCase
+- No usar más de tres palabras para nombrar la clase
+- Escribir las palabras juntas (`NombreClase`) o separarlas por guiones bajos
+- El nombre debe ser algo entendible y que remita al propósito de la clase
+
  # Fuente
  
  Esta información se obtuvo de https://www.python.org/dev/peps/pep-0008/
