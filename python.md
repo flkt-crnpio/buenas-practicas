@@ -152,8 +152,13 @@ file_2.write(file_1.read())`
 
 - Al nombrar la clase se debe usar el estilo CamelCase
 - No usar más de tres palabras para nombrar la clase
-- Escribir las palabras juntas (`NombreClase`) o separarlas por guiones bajos
+- Escribir las palabras juntas `NombreClase` o separarlas por guiones bajos `Nombre_De_Clase`
 - El nombre debe ser algo entendible y que remita al propósito de la clase
+- Colocar los atributos de la instancia en el método `_init_`
+- Al escribir los atributos, éstos deben ir en minúsculas, en caso de usar múltiples palabras conectarlos por medio de guines bajos (estilo serpiente/snake case style)  `first_name`
+
+## Funciones
+- 
 
  # Fuente
  
