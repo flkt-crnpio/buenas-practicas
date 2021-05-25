@@ -157,6 +157,13 @@ file_2.write(file_1.read())`
 - Colocar los atributos de la instancia en el método `_init_`
 - Al escribir los atributos, éstos deben ir en minúsculas, en caso de usar múltiples palabras conectarlos por medio de guines bajos (estilo serpiente/snake case style)  `first_name`
 
+Ejemplo
+
+`class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age`
+
 ## Funciones
 - Usar minúsculas para nombrar las funciones, usar guines bajos para conectar palabras
 - Siempre usar `self` en el primer argumento
@@ -165,7 +172,8 @@ file_2.write(file_1.read())`
 
  # Fuente
  
- Esta información se obtuvo de https://www.python.org/dev/peps/pep-0008/
+ - [PEP8](https://www.python.org/dev/peps/pep-0008/)
+ - [Advanced Python: 9 Best Practices to Apply When You Define Classes](https://betterprogramming.pub/advanced-python-9-best-practices-to-apply-when-you-define-classes-871a27af658b)
         
  # Contacto
  
