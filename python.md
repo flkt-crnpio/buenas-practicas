@@ -150,16 +150,15 @@ file_2.write(file_1.read())`
 
 ## Clases
 
-- Al nombrar la clase se debe usar el estilo CamelCase
+- Al nombrar la clase se debe usar el estilo CamelCase, o si sólo es una palabra para el nombre, ésta debe ir en con la primera letra en mayúscula. 
 - No usar más de tres palabras para nombrar la clase
 - Escribir las palabras juntas `NombreClase` o separarlas por guiones bajos `Nombre_De_Clase`
 - El nombre debe ser algo entendible y que remita al propósito de la clase
 - Colocar los atributos de la instancia en el método `_init_`
 - Al escribir los atributos, éstos deben ir en minúsculas, en caso de usar múltiples palabras conectarlos por medio de guines bajos (estilo serpiente/snake case style)  `first_name`
 
-Ejemplo
+_Ejemplo_
 ```class Person:
-
   def __init__(self, name, age):
     self.name = name
     self.age = age
@@ -167,9 +166,16 @@ Ejemplo
 
 ## Funciones
 - Usar minúsculas para nombrar las funciones, usar guines bajos para conectar palabras
-- Siempre usar `self` en el primer argumento
+- Siempre usar `self` para el primer argumento en _instance methods_
+- Siempre usar `cls` para el primer argumento en _class methods_
 - Describir lo que hace la función, este comentario debe aparecer después de la línea de definición `def`
 - Usar un nivel extra de identación (agregar 4 espacios) para hacer la distinción de los argumentos del resto del código
+
+_Ejemplo_
+```
+def my_function():
+  print("Hello from a function")
+```
 
  # Fuente
  
