@@ -173,7 +173,7 @@ _Ejemplo_
 - Describir lo que hace la función, este comentario debe aparecer después de la línea de definición `def`
 - Usar un nivel extra de identación (agregar 4 espacios) para hacer la distinción de los argumentos del resto del código
 
-_Ejemplo_
+_Ejemplos_
 ```
 def my_function():
   print("Hello from a function")
@@ -182,6 +182,10 @@ def my_function():
 def __init__(self, fruit, color):
 self.fruit = fruit
 self.color = color
+```
+```
+def classmethod(cls):
+        return 'class method called', cls
 ```
 
 
