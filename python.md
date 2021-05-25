@@ -178,6 +178,12 @@ _Ejemplo_
 def my_function():
   print("Hello from a function")
 ```
+```
+def __init__(self, fruit, color):
+self.fruit = fruit
+self.color = color
+```
+
 
  # Fuente
  
