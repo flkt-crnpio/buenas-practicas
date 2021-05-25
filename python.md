@@ -6,17 +6,13 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - Las importaciones deben estar en líneas separadas:
         
 ```
-    **Correcto**
+    Correcto
+    import os
+    import sys
+    from subprocess import Popen, PIPE
 
-    `import os`
-    
-    `import sys`
-    
-    `from subprocess import Popen, PIPE`
-
-    **Incorrecto**
-
-    `import os, sys`
+    Incorrecto
+    import os, sys
 ```
 
 - Las importaciones deben agruparse en el siguiente orden:
