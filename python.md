@@ -5,7 +5,7 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - La importación de todas las bibliotecas siempre debe ir al inicio del código y después de cualquier comentario
 - Las importaciones deben estar en líneas separadas:
         
-<span style="color:blue"> Correcto </span>
+<font color='blue'> Correcto </font>
 ```
     import os
     import sys
