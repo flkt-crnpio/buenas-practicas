@@ -5,13 +5,14 @@ En esta sección se resumen los que se consideran los puntos más importantes en
 - La importación de todas las bibliotecas siempre debe ir al inicio del código y después de cualquier comentario
 - Las importaciones deben estar en líneas separadas:
         
+**Correcto**
 ```
-    Correcto
     import os
     import sys
     from subprocess import Popen, PIPE
-
-    Incorrecto
+```
+**Incorrecto**
+```
     import os, sys
 ```
 
