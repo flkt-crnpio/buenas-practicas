@@ -189,7 +189,7 @@ def classmethod(cls):
 ```
 
 
- # Fuente
+ # Fuentes
  
  - [PEP8](https://www.python.org/dev/peps/pep-0008/)
  - [Advanced Python: 9 Best Practices to Apply When You Define Classes](https://betterprogramming.pub/advanced-python-9-best-practices-to-apply-when-you-define-classes-871a27af658b)
