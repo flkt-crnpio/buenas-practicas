@@ -158,12 +158,12 @@ file_2.write(file_1.read())`
 - Al escribir los atributos, éstos deben ir en minúsculas, en caso de usar múltiples palabras conectarlos por medio de guines bajos (estilo serpiente/snake case style)  `first_name`
 
 Ejemplo
-g
 ```class Person:
 
   def __init__(self, name, age):
     self.name = name
-    self.age = age```
+    self.age = age
+```
 
 ## Funciones
 - Usar minúsculas para nombrar las funciones, usar guines bajos para conectar palabras
