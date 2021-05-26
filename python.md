@@ -167,27 +167,45 @@ _Ejemplo_
 ```
 
 ## Funciones
-- Usar minúsculas para nombrar las funciones, usar guines bajos para conectar palabras
-- Siempre usar `self` para el primer argumento en _instance methods_
-- Siempre usar `cls` para el primer argumento en _class methods_
+- Usar minúsculas para nombrar las funciones y las variables, usar guiones bajos para conectar palabras
+```
+def long_function_name(
+        var_one, var_two, var_three,
+        var_four):
+    print(var_one)
+```
 - Describir lo que hace la función, este comentario debe aparecer después de la línea de definición `def`
-- Usar un nivel extra de identación (agregar 4 espacios) para hacer la distinción de los argumentos del resto del código
-
-_Ejemplos_
 ```
-def my_function():
-  print("Hello from a function")
+def hello_world():
+    # A simple comment preceding a simple print statement
+    print("Hello World")
 ```
+- Siempre usar `self` para el primer argumento en _instance methods_
 ```
 def __init__(self, fruit, color):
 self.fruit = fruit
 self.color = color
 ```
+- Siempre usar `cls` para el primer argumento en _class methods_
 ```
 def class_method(cls):
         return 'class method called', cls
 ```
 
+- Usar un nivel extra de identación (agregar 4 espacios) para hacer la distinción de los argumentos del resto del código
+- Si dentro de la función utilizas un operador _si (if)_ todos ten en cuenta que o todos los operadores regresan una expresión, o ninguno lo hace.
+```
+def foo(x):
+    if x >= 0:
+        return math.sqrt(x)
+    else:
+        return None
+
+def bar(x):
+    if x < 0:
+        return None
+    return math.sqrt(x)
+```
 
  # Fuentes
  
