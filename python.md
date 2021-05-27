@@ -167,14 +167,20 @@ _Ejemplo_
 ```
 
 ## Funciones
-- Usar minúsculas para nombrar las funciones y las variables, usar guiones bajos para conectar palabras
+- Usar minúsculas para nombrar las funciones, las variables y los argumentos. En caso de unar más de una palabra para denominar cualquiera de los elementos anteriores usar guiones bajos para conectarlas (snake case style). Al igual que en los otros casos de estilo **NO** poner un espacio en blanco ante de los dos puntos _(colon)_ _(:)_ que definen el cuerpo de la función. 
+- Usar un nivel extra de identación (agregar 4 espacios) para hacer la distinción de los argumentos del resto del código
+- Describir lo que hace la función, este comentario debe aparecer después de la línea de definición `def`. Recordar no exceder los 72 caracteres, si esto sucede colocar en dos líneas la descripción
 ```
 def long_function_name(
-        var_one, var_two, var_three,
-        var_four):
+       var_one, 
+       var_two, 
+       var_three,
+       var_four):
+# Descripción de lo que hace la función.
+# Segunda línea de descripción para no exceder los caracteres.
     print(var_one)
 ```
-- Describir lo que hace la función, este comentario debe aparecer después de la línea de definición `def`
+
 ```
 def hello_world():
     # A simple comment preceding a simple print statement
@@ -192,7 +198,7 @@ def class_method(cls):
         return 'class method called', cls
 ```
 
-- Usar un nivel extra de identación (agregar 4 espacios) para hacer la distinción de los argumentos del resto del código
+
 - Si dentro de la función utilizas un operador _si (if)_ todos ten en cuenta que o todos los operadores regresan una expresión, o ninguno lo hace.
 ```
 def foo(x):
