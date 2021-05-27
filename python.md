@@ -171,20 +171,10 @@ _Ejemplo_
 - Usar un nivel extra de identación (agregar 4 espacios) para hacer la distinción de los argumentos del resto del código
 - Describir lo que hace la función, este comentario debe aparecer después de la línea de definición `def`. Recordar no exceder los 72 caracteres, si esto sucede colocar en dos líneas la descripción
 ```
-def long_function_name(
-       var_one, 
-       var_two, 
-       var_three,
-       var_four):
+def hello_world():
 # Descripción de lo que hace la función.
 # Segunda línea de descripción para no exceder los caracteres.
     print(var_one)
-```
-
-```
-def hello_world():
-    # A simple comment preceding a simple print statement
-    print("Hello World")
 ```
 - Siempre usar `self` para el primer argumento en _instance methods_
 ```
@@ -197,9 +187,7 @@ self.color = color
 def class_method(cls):
         return 'class method called', cls
 ```
-
-
-- Si dentro de la función utilizas un operador _si (if)_ todos ten en cuenta que o todos los operadores regresan una expresión, o ninguno lo hace.
+- Si dentro de la función se utiliza un operador _si (if)_ tener en cuenta que o todos los operadores regresan una expresión, o ninguno lo hace.
 ```
 def foo(x):
     if x >= 0:
