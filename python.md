@@ -200,13 +200,24 @@ def bar(x):
         return None
     return math.sqrt(x)
 ```
+- Si la función tiene más de tres parámetros se recomienda usar *keyword arguments*. En la siguiente función los argumentos `cc` y `bcc` son opcionales y se evaluan con `None` cuando no se les asigna ningún valor.
+```
+def send(message, to, cc=None, bcc=None):
+    print('mensaje enviado')
+```
+- Si la función requiere un número indeterminado de argumentos, usar la palabra clave _**kwargs_ y en el cuerpo de la función usar un diccionario con todos los argumentos.
+```
+def myFun(**kwargs):
+    for key, value in kwargs.items():
+        print ("%s == %s" %(key, value))
+ ```
 
  # Fuentes
  
  - [PEP8](https://www.python.org/dev/peps/pep-0008/)
  - [Advanced Python: 9 Best Practices to Apply When You Define Classes](https://betterprogramming.pub/advanced-python-9-best-practices-to-apply-when-you-define-classes-871a27af658b)
  - [Python’s Instance, Class and Static Methods](https://medium.com/python-features/pythons-instance-class-and-static-methods-e9097f07829b#:~:text='WELCOME'-,Class%20Methods,the%20object%20of%20the%20class%20.)
-        
+ -[CodeStyke](https://docs.python-guide.org/writing/style/)
  # Contacto
  
  nadia.neri.vera@gmail.com
