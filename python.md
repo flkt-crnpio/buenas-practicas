@@ -217,7 +217,7 @@ def myFun(**kwargs):
  - [PEP8](https://www.python.org/dev/peps/pep-0008/)
  - [Advanced Python: 9 Best Practices to Apply When You Define Classes](https://betterprogramming.pub/advanced-python-9-best-practices-to-apply-when-you-define-classes-871a27af658b)
  - [Python’s Instance, Class and Static Methods](https://medium.com/python-features/pythons-instance-class-and-static-methods-e9097f07829b#:~:text='WELCOME'-,Class%20Methods,the%20object%20of%20the%20class%20.)
- -[CodeStyke](https://docs.python-guide.org/writing/style/)
+ -[CodeStyle](https://docs.python-guide.org/writing/style/)
  # Contacto
  
  nadia.neri.vera@gmail.com
