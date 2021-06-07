@@ -154,10 +154,9 @@ file_2.write(file_1.read())
 
 - Al nombrar la clase se debe usar el estilo CamelCase, o si sólo es una palabra para el nombre, ésta debe ir en con la primera letra en mayúscula. 
 - No usar más de tres palabras para nombrar la clase
-- Escribir las palabras juntas `NombreClase` o separarlas por guiones bajos `Nombre_De_Clase`
 - El nombre debe ser algo entendible y que remita al propósito de la clase
-- Colocar los atributos en al momento de iniciar la clase
-- Al escribir los atributos, éstos deben ir en minúsculas, en caso de usar múltiples palabras conectarlos por medio de guines bajos (estilo serpiente/snake case style)  `first_name`
+- Colocar los atributos al momento de iniciar la clase
+- Al escribir los atributos, éstos deben de ir en minúsculas, en caso de usar múltiples palabras conectarlos por medio de guiones bajos (estilo serpiente/snake case style)  `first_name`
 
 _Ejemplo_
 ```class Person:
